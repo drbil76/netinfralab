@@ -1,0 +1,21 @@
+$TTL 86400
+@    IN    SOA   ns1.bdraa.local. admin.bdraa.local. (
+             2025071010 ; Serial
+             3600       ; Refresh
+             1800       ; Retry
+             604800     ; Expire
+             86400 )    ; Minimum TTL
+
+     IN    NS    ns1.bdraa.local.
+     IN    NS    ns2.bdraa.local.
+
+ns1  IN    A     10.10.11.1
+ns2  IN    A     10.10.11.2
+
+www     IN  A     10.10.11.3
+ftp     IN  A     10.10.11.3
+reception IN A    10.10.11.3
+envoi    IN A     10.10.11.3
+@   IN   TXT   "v=spf1 mx a envoi.bdraa.local -all"
+mail._domainkey IN      TXT     ( "v=DKIM1; k=rsa; "
+          "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKQLZdZgOF9dMeaxI8O1uTHostLZXDyIkgtIA7EhEmMp8+VoJ1hnl+nplYh7qXUyKxG4f9JeJVRLvjYxZYI+RtDkNcy3zFaqoclQfHb3cRIntVJywIyOhctxJa7Hd5Wohc/ocPABtEGAL/fJM/t9cVZi1FdW1xEkuJ5jyU9+9JxwIDAQAB" )  ; ----- DKIM key

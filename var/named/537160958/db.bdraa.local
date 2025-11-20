@@ -1,0 +1,21 @@
+$TTL 86400
+@   IN  SOA ns1.bdraa.local. admin.bdraa.local. (
+            2025070901 ; Serial
+            3600       ; Refresh
+            1800       ; Retry
+            604800     ; Expire
+            86400 )    ; Minimum
+
+@       IN  NS      ns1.bdraa.local.
+@       IN  NS      ns2.bdraa.local.
+
+@       IN  MX 10   reception.bdraa.local.
+
+ns1     IN  A       10.10.11.87
+ns2     IN  A       10.10.11.87
+www     IN  A       10.10.11.87
+ftp     IN  A       10.10.11.87
+reception IN A      10.10.11.87
+envoi   IN  A       10.10.11.87
+
+@       IN  TXT     "v=spf1 mx a envoi.bdraa.local ~all"

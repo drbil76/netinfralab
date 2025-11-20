@@ -1,0 +1,20 @@
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archives / artefacts
+*.tgz
+*.tar.gz
+*.zip
+
+# Logs & runtime
+*.log
+var/log/*
+var/named/data/*
+*.pid
+*.run
+
+# Systèmes temporaires
+*~
