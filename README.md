@@ -40,7 +40,7 @@ _Small infra lab for local tests: DNS/FTP/Web/Mail on a fictitious domain `bdraa
 - IMAP via Cyrus (`admins: cyrus`)
 - SPF/DKIM already published in the DNS zone.
 
-## Docker stack (TP3)
+## Docker stack
 Path: `tp3-537160958/`
 
 Contents:
